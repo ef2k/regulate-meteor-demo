@@ -1,0 +1,19 @@
+{
+  "meteor": {
+    "git": "https://github.com/meteor/meteor.git",
+    "branch": "master",
+    "commit": "f07715dc70de16a7aab84e56ab0c6cbd9c1f9dc6"
+  },
+  "dependencies": {
+    "basePackages": {
+      "regulate.js": {}
+    },
+    "packages": {
+      "regulate.js": {
+        "git": "https://github.com/eddflrs/regulate-meteor.git",
+        "tag": "v0.1.1",
+        "commit": "68340eb63a197c4925177a8624372d1a2d71e3bf"
+      }
+    }
+  }
+}
