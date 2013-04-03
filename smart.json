@@ -1,9 +1,0 @@
-{
-    "meteor": {
-        "branch": "master"
-    },
-    "packages": {
-
-        "regulate": "/var/lib/stickshift/515379205004467abd000085/app-root/data/454022"
-    }
-}
