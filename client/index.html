@@ -3,10 +3,21 @@
 </head>
 
 <body>
+  {{> myPage}}
+</body>
 
+<template name='myPage'>
   <h2>Demo Form</h2>
   <p>The following is a demo of form validation done with the regulate.js package.</p>
-  <form id="demoForm">
+  {{> myForms}}
+</template>
+
+<template name='myForms'>
+  {{> myForm}}
+</template>
+
+<template name='myForm'>
+    <form id="demoForm">
     <p>
       <input type="text" name="username" placeholder='Username'/>
       <div id="username-error"></div>
@@ -27,4 +38,4 @@
       <input type="submit" value="Validate"/>
     </p>
   </form>
-</body>
+</template>
