@@ -1,5 +1,6 @@
 {
   "packages": {
-    "regulate.js": {}
+    "regulate.js": {},
+    "router": {}
   }
 }

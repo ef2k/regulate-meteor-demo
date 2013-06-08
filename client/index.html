@@ -3,13 +3,25 @@
 </head>
 
 <body>
-  {{> myPage}}
+  {{renderPage}}
 </body>
+
+<template name='index'>
+  <p><a href="/forms">See the form.</a></p>
+  <p><a href="/foo">See the foo form.</a></p>
+</template>
 
 <template name='myPage'>
   <h2>Demo Form</h2>
   <p>The following is a demo of form validation done with the regulate.js package.</p>
   {{> myForms}}
+</template>
+
+<template name='fooForm'>
+  <form id="fooForm">
+    <input type="text" name="name" placeholder="Name"/>
+    <input type="submit"/>
+  </form>
 </template>
 
 <template name='myForms'>
@@ -34,6 +46,17 @@
       <input type="email" name="email" placeholder='Email'/>
       <div id="email-error"></div>
     </p>
+
+    <p>
+      <input type="file" name="imageFile"/>
+      <div id="imageFile-error"></div>
+    </p>
+
+    <p>
+      <input type="file" name="pdfFile"/>
+      <div id="pdfFile-error"></div>
+    </p>
+
     <p>
       <input type="submit" value="Validate"/>
     </p>
